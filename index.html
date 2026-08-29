@@ -3,79 +3,222 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#050505">
-  <meta name="description" content="Black DEX — a professional non-custodial trading terminal for crypto and real-world markets.">
-  <title>BLACK DEX — Trade Without Permission</title>
+  <meta name="theme-color" content="#0b0e11">
+  <title>Black DEX — Perpetual Futures Exchange</title>
+  <meta name="description" content="Trade crypto and RWA perpetual futures on Black DEX. Non-custodial terminal on Orderly Network. Institutional-grade matching, your keys.">
+  <meta name="keywords" content="Black DEX, perpetual futures, Orderly Network, non-custodial DEX, crypto perps, RWA perps, decentralized exchange">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://main.black-dex.online/">
+  <link rel="icon" type="image/webp" href="https://black-dex.online/favicon.webp">
+  <link rel="apple-touch-icon" href="https://black-dex.online/favicon.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Black DEX">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://main.black-dex.online/">
+  <meta property="og:title" content="Black DEX — Perpetual Futures Exchange">
+  <meta property="og:description" content="Non-custodial omnichain perps for crypto and RWA markets. Institutional execution. Your keys.">
+  <meta property="og:image" content="https://black-dex.online/logo.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@BlackDexOnline">
+  <meta name="twitter:title" content="Black DEX — Perpetual Futures Exchange">
+  <meta name="twitter:description" content="Non-custodial omnichain perps for crypto and RWA markets. Your keys. Your trades.">
+  <meta name="twitter:image" content="https://black-dex.online/logo.webp">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Black DEX","url":"https://main.black-dex.online/","logo":"https://black-dex.online/logo.webp","sameAs":["https://x.com/BlackDexOnline","https://t.me/blackdexonlineadmin","https://black-dex.online/"],"description":"Non-custodial omnichain perpetual futures venue built on Orderly Network."}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#050505;--panel:#0d0d0d;--panel2:#111;--line:#262626;--gold:#f2c14e;--gold2:#ffda6a;--text:#f5f5f5;--muted:#9b9b9b;--green:#76d69b}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92vw);margin:auto}
-    .topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-    header{position:fixed;top:3px;left:0;right:0;z-index:20;background:rgba(5,5,5,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(242,193,78,.12)}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-family:"Space Grotesk";font-weight:800;letter-spacing:.12em}.mark{width:34px;height:34px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-weight:900;transform:skew(-8deg);box-shadow:0 0 24px rgba(242,193,78,.12)}
-    .navlinks{display:flex;gap:28px;color:#b8b8b8;font-size:13px;font-weight:600}.navlinks a:hover{color:var(--gold)}.navcta{padding:11px 18px;border:1px solid rgba(242,193,78,.55);color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.navcta:hover{background:var(--gold);color:#050505}
-    .hero{min-height:900px;padding-top:120px;position:relative;display:flex;align-items:center;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 45%,rgba(242,193,78,.13),transparent 32%),linear-gradient(90deg,#050505 0%,rgba(5,5,5,.88) 43%,rgba(5,5,5,.3) 100%);z-index:2;pointer-events:none}.heroimg{position:absolute;right:0;top:0;width:64%;height:100%;object-fit:cover;object-position:center;filter:saturate(.72) contrast(1.15);opacity:.78}.hero .wrap{position:relative;z-index:3}.eyebrow{display:inline-flex;gap:10px;align-items:center;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:24px}.dot{width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 15px var(--gold)}h1{font-family:"Space Grotesk";font-size:clamp(58px,8vw,108px);line-height:.9;letter-spacing:-.055em;margin:0;max-width:760px;text-transform:uppercase}h1 span{color:var(--gold)}.lead{font-size:18px;line-height:1.7;color:#b6b6b6;max-width:620px;margin:30px 0}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:15px 23px;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;transition:.2s}.btn.primary{background:var(--gold);color:#050505;box-shadow:0 10px 35px rgba(242,193,78,.16)}.btn.primary:hover{background:var(--gold2);transform:translateY(-2px)}.btn.secondary{border:1px solid #3a3a3a;color:#ddd;background:rgba(10,10,10,.55)}.btn.secondary:hover{border-color:var(--gold);color:var(--gold)}
-    .ticker{border-top:1px solid #1d1d1d;border-bottom:1px solid #1d1d1d;background:#080808;overflow:hidden}.tickerin{display:flex;gap:60px;white-space:nowrap;padding:13px 0;color:#777;font-size:10px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}.ticker strong{color:var(--gold)}
-    section{padding:110px 0}.sectionhead{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:48px}.kicker{color:var(--gold);font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}.sectionhead h2{font-family:"Space Grotesk";font-size:clamp(38px,5vw,66px);line-height:1;margin:10px 0 0;letter-spacing:-.045em;text-transform:uppercase}.sectionhead p{max-width:410px;color:#858585;line-height:1.7;font-size:14px}
-    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#252525;border:1px solid #252525}.card{background:var(--panel);padding:34px;min-height:250px;position:relative}.card:after{content:"";position:absolute;left:34px;bottom:28px;width:38px;height:2px;background:var(--gold);opacity:.65}.num{color:#555;font-size:11px;font-weight:800;letter-spacing:.15em}.card h3{font-family:"Space Grotesk";font-size:24px;margin:36px 0 12px}.card p{color:#8d8d8d;line-height:1.65;font-size:14px;max-width:330px}
-    .machines{display:grid;grid-template-columns:1fr 1fr;gap:18px}.machine{height:510px;position:relative;overflow:hidden;border:1px solid #282828;background:#0b0b0b}.machine img{width:100%;height:100%;object-fit:cover;filter:grayscale(.2) contrast(1.12);transition:transform .6s}.machine:hover img{transform:scale(1.04)}.machine:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.88),transparent 55%)}.machinecopy{position:absolute;z-index:2;left:30px;right:30px;bottom:28px}.machinecopy .label{color:var(--gold);font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.machinecopy h3{font-family:"Space Grotesk";font-size:36px;margin:8px 0 6px;text-transform:uppercase}.machinecopy p{margin:0;color:#aaa;font-size:13px}
-    .terminal{background:linear-gradient(135deg,#101010,#070707);border:1px solid #282828;padding:52px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;position:relative;overflow:hidden}.terminal:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:rgba(242,193,78,.08);filter:blur(40px);right:-160px;top:-230px}.terminal h2{font-family:"Space Grotesk";font-size:52px;line-height:1;letter-spacing:-.045em;text-transform:uppercase;margin:12px 0 20px}.terminal p{color:#969696;line-height:1.7;max-width:600px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-self:center}.stat{border:1px solid #292929;background:#0b0b0b;padding:24px}.stat b{display:block;color:var(--gold);font-family:"Space Grotesk";font-size:28px}.stat span{display:block;margin-top:6px;color:#777;font-size:10px;text-transform:uppercase;letter-spacing:.12em}
-    .final{text-align:center;padding:120px 0 140px}.final h2{font-family:"Space Grotesk";font-size:clamp(48px,7vw,92px);line-height:.92;letter-spacing:-.055em;text-transform:uppercase;margin:15px auto 25px;max-width:900px}.final p{color:#8e8e8e;max-width:560px;margin:0 auto 30px;line-height:1.7}.gold{color:var(--gold)}footer{border-top:1px solid #1f1f1f;padding:28px 0;color:#666;font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px}.foot b{color:#aaa;letter-spacing:.12em}
-    @media(max-width:800px){.navlinks{display:none}.hero{min-height:780px}.heroimg{width:100%;opacity:.35}.hero:before{background:linear-gradient(90deg,#050505 0%,rgba(5,5,5,.75) 65%,rgba(5,5,5,.35) 100%)}.benefits,.machines,.terminal{grid-template-columns:1fr}.machine{height:400px}.terminal{padding:32px}.terminal h2{font-size:40px}.sectionhead{display:block}.sectionhead p{margin-top:20px}.stats{grid-template-columns:1fr 1fr}.foot{display:block}.foot span{display:block;margin-top:8px}}
+    :root{--bg:#0b0e11;--bg2:#12161c;--panel:#161a21;--line:#2b3139;--gold:#f0b90b;--gold2:#f8d12f;--text:#eaecef;--muted:#848e9c;--up:#0ecb81;--down:#f6465d}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans",system-ui,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1200px,92vw);margin:auto}
+    .ann{background:#1e2329;color:#f0b90b;font-size:12px;font-weight:600;letter-spacing:.04em;text-align:center;padding:8px 16px;border-bottom:1px solid #2b3139}
+    header{position:sticky;top:0;z-index:40;background:rgba(11,14,17,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.08em}
+    .mark{width:28px;height:28px;border-radius:6px;background:var(--gold);color:#0b0e11;display:grid;place-items:center;font-weight:800}
+    .navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px;font-weight:500}
+    .navlinks a:hover{color:var(--text)}
+    .navcta{display:flex;gap:8px;align-items:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:6px;font-size:14px;font-weight:600;transition:.15s}
+    .btn.gold{background:var(--gold);color:#0b0e11}.btn.gold:hover{background:var(--gold2)}
+    .btn.ghost{border:1px solid var(--line);color:var(--text)}.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+    .btn.lg{padding:14px 22px;font-size:15px}
+    .hero{padding:72px 0 48px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+    .kicker{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}
+    h1{font-size:clamp(40px,5.4vw,64px);line-height:1.05;letter-spacing:-.03em;margin:0 0 18px}
+    .lead{color:var(--muted);font-size:17px;line-height:1.65;max-width:540px;margin:0 0 28px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+    .trust{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+    .trust b{color:var(--text)}
+    .terminal{background:linear-gradient(180deg,#1a1f27,#12161c);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.35)}
+    .tbar{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+    .dots{display:flex;gap:6px}.dots i{width:8px;height:8px;border-radius:50%;background:#2b3139;display:block}
+    .dots i:first-child{background:#f6465d}.dots i:nth-child(2){background:#f0b90b}.dots i:nth-child(3){background:#0ecb81}
+    table.mkts{width:100%;border-collapse:collapse;font-size:13px}
+    table.mkts th{text-align:left;color:#5e6673;font-weight:500;padding:10px 14px;border-bottom:1px solid var(--line)}
+    table.mkts td{padding:12px 14px;border-bottom:1px solid #1e2329;font-family:"IBM Plex Mono",monospace}
+    table.mkts tr:hover td{background:#1a1f27}
+    .up{color:var(--up)}.pair{font-family:"IBM Plex Sans",sans-serif;font-weight:600}
+    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#12161c;overflow:hidden}
+    .tickerin{display:flex;gap:40px;white-space:nowrap;padding:11px 0;font-size:12px;color:var(--muted);animation:mar 28s linear infinite}
+    .tickerin b{color:var(--text)}
+    @keyframes mar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:56px 0}
+    .stat{background:var(--bg2);padding:22px 20px}
+    .stat span{display:block;color:var(--muted);font-size:12px;margin-bottom:8px}
+    .stat b{font-size:26px;letter-spacing:-.03em}
+    section{padding:72px 0}
+    .sec h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.03em;margin:0 0 10px}
+    .sec p.sub{color:var(--muted);margin:0 0 32px;max-width:560px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:24px;min-height:210px}
+    .card h3{margin:14px 0 8px;font-size:20px}
+    .card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
+    .ico{width:36px;height:36px;border-radius:8px;background:#1e2329;color:var(--gold);display:grid;place-items:center;font-weight:800}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .step{border-left:2px solid var(--gold);padding:4px 0 4px 16px}
+    .step span{color:var(--gold);font-size:12px;font-weight:700}
+    .step h3{margin:8px 0 6px}
+    .step p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+    .note{font-size:12px;color:#5e6673;margin-top:10px}
+    .cta{background:linear-gradient(180deg,#161a21,#0b0e11);border:1px solid var(--line);border-radius:14px;padding:56px 40px;text-align:center}
+    .cta h2{margin:0 0 12px;font-size:40px}
+    .cta p{color:var(--muted);margin:0 0 24px}
+    footer{border-top:1px solid var(--line);padding:40px 0 28px;color:var(--muted);font-size:13px}
+    .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px;margin-bottom:28px}
+    footer a:hover{color:var(--gold)}
+    .copy{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:860px){.navlinks{display:none}.hero,.split,.grid3,.steps,.stats,.fgrid{grid-template-columns:1fr}h1{font-size:40px}.cta{padding:36px 20px}}
   </style>
 </head>
 <body>
-  <div class="topline"></div>
-  <header><div class="wrap"><nav>
-    <a class="brand" href="#top"><span class="mark">B</span> BLACK DEX</a>
-    <div class="navlinks"><a href="#benefits">Benefits</a><a href="#markets">Markets</a><a href="#terminal">Terminal</a></div>
-    <a class="navcta" href="https://black-dex.online">Launch DEX ↗</a>
-  </nav></div></header>
-
+  <div class="ann">Non-custodial perpetual futures · Shared Orderly CLOB liquidity · List a market on Black DEX</div>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#top"><span class="mark">B</span> BLACK DEX</a>
+        <div class="navlinks">
+          <a href="#markets">Markets</a>
+          <a href="#products">Products</a>
+          <a href="#why">Why Black DEX</a>
+          <a href="https://listing.black-dex.online">List a market</a>
+        </div>
+        <div class="navcta">
+          <a class="btn ghost" href="https://x.com/BlackDexOnline">X</a>
+          <a class="btn gold" href="https://black-dex.online">Launch Exchange</a>
+        </div>
+      </nav>
+    </div>
+  </header>
   <main id="top">
-    <section class="hero">
-      <img class="heroimg" src="https://images.unsplash.com/photo-1621556470273-ae7569cb7809?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=2200" alt="Black and yellow motorcycle at night">
-      <div class="wrap">
-        <div class="eyebrow"><span class="dot"></span> BLACK DEX / GENESIS</div>
-        <h1>Trade<br><span>Without</span><br>Permission.</h1>
-        <p class="lead">A professional trading terminal built for people who want direct market access, non-custodial control and a faster way to move through crypto and real-world markets.</p>
-        <div class="actions"><a class="btn primary" href="https://black-dex.online">Enter Black DEX ↗</a><a class="btn secondary" href="#benefits">Explore the edge ↓</a></div>
+    <section class="wrap hero">
+      <div>
+        <div class="kicker">Perpetual futures exchange</div>
+        <h1>Trade crypto perps with exchange-grade execution.</h1>
+        <p class="lead">Black DEX is a professional trading venue for perpetual futures. Matching, risk and settlement run on Orderly Network. You keep the keys. The terminal looks and trades like a centralized exchange — without handing over custody.</p>
+        <div class="actions">
+          <a class="btn gold lg" href="https://black-dex.online">Start trading</a>
+          <a class="btn ghost lg" href="#markets">View markets</a>
+        </div>
+        <div class="trust">
+          <span><b>Non-custodial</b> wallet login</span>
+          <span><b>Omnichain</b> deposits</span>
+          <span><b>Orderly</b> shared orderbook</span>
+        </div>
+      </div>
+      <div class="terminal">
+        <div class="tbar"><span class="dots"><i></i><i></i><i></i></span><span>BLACK DEX · PERPS</span><span>USDT-M</span></div>
+        <table class="mkts">
+          <thead><tr><th>Market</th><th>Last</th><th>24h</th><th>Max lev.</th></tr></thead>
+          <tbody>
+            <tr><td class="pair">BTC-USDC</td><td>—</td><td class="up">Live</td><td>10×*</td></tr>
+            <tr><td class="pair">ETH-USDC</td><td>—</td><td class="up">Live</td><td>10×*</td></tr>
+            <tr><td class="pair">SOL-USDC</td><td>—</td><td class="up">Live</td><td>10×*</td></tr>
+            <tr><td class="pair">RWA perps</td><td>—</td><td>Listed</td><td>Var.</td></tr>
+          </tbody>
+        </table>
+        <div style="padding:14px 16px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#848e9c">
+          <span>Prices load in the live terminal</span>
+          <a class="btn gold" href="https://black-dex.online/perp/PERP_ETH_USDC">Trade ETH</a>
+        </div>
       </div>
     </section>
-
-    <div class="ticker"><div class="tickerin wrap"><span><strong>BLACK DEX</strong></span><span>NON-CUSTODIAL</span><span>CRYPTO + RWA</span><span>UP TO 10× LEVERAGE*</span><span>FAST EXECUTION</span><span>BUILT FOR TRADERS</span></div></div>
-
-    <section id="benefits"><div class="wrap">
-      <div class="sectionhead"><div><div class="kicker">01 / The Black Advantage</div><h2>Built for<br>the next move.</h2></div><p>Black DEX combines the speed and focus of a professional trading terminal with a decentralized, trader-first philosophy.</p></div>
-      <div class="benefits">
-        <article class="card"><div class="num">01 / CONTROL</div><h3>Non-custodial</h3><p>Keep control of your assets and interact with markets directly instead of handing your trading capital to a traditional exchange.</p></article>
-        <article class="card"><div class="num">02 / ACCESS</div><h3>Crypto + RWA</h3><p>One trading environment for crypto markets and selected real-world asset exposure, designed to expand the opportunities available to active traders.</p></article>
-        <article class="card"><div class="num">03 / LEVERAGE</div><h3>Up to 10×</h3><p>Access leveraged markets when the setup demands it. Risk remains yours — the terminal gives you the tools to execute.</p></article>
-        <article class="card"><div class="num">04 / ECONOMICS</div><h3>Competitive fees</h3><p>Trade with a fee structure designed to stay competitive for active users and volume-focused strategies.</p></article>
-        <article class="card"><div class="num">05 / COMMUNITY</div><h3>Rewards</h3><p>Referral opportunities, trading competitions and Genesis initiatives give active traders more ways to participate in the Black DEX ecosystem.</p></article>
-        <article class="card"><div class="num">06 / MINDSET</div><h3>Trade privately</h3><p>No unnecessary friction. Black DEX is built around direct market access, trader autonomy and a clean professional interface.</p></article>
+    <div class="ticker"><div class="tickerin">
+      <span><b>BTC-USDC</b> PERP</span><span><b>ETH-USDC</b> PERP</span><span><b>SOL-USDC</b> PERP</span><span>NON-CUSTODIAL</span><span>ORDERLY CLOB</span><span>OMNICHAIN</span><span>RWA MARKETS</span><span>UP TO 10×*</span>
+      <span><b>BTC-USDC</b> PERP</span><span><b>ETH-USDC</b> PERP</span><span><b>SOL-USDC</b> PERP</span><span>NON-CUSTODIAL</span><span>ORDERLY CLOB</span><span>OMNICHAIN</span><span>RWA MARKETS</span><span>UP TO 10×*</span>
+    </div></div>
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat"><span>Venue type</span><b>Perps DEX</b></div>
+        <div class="stat"><span>Infrastructure</span><b>Orderly</b></div>
+        <div class="stat"><span>Custody</span><b>Self-hosted keys</b></div>
+        <div class="stat"><span>Access</span><b>24/7</b></div>
       </div>
-    </div></section>
-
-    <section id="markets"><div class="wrap">
-      <div class="sectionhead"><div><div class="kicker">02 / Speed Culture</div><h2>Move fast.<br>Stay in control.</h2></div><p>The Black DEX identity is built around the same principles as high-performance machines: precision, responsiveness and no wasted motion.</p></div>
-      <div class="machines">
-        <article class="machine"><img src="https://images.unsplash.com/photo-1621556470273-ae7569cb7809?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1800" alt="Black and yellow motorcycle at night"><div class="machinecopy"><div class="label">BLACK / TWO WHEELS</div><h3>Zero hesitation.</h3><p>Precision when the market moves.</p></div></article>
-        <article class="machine"><img src="https://images.unsplash.com/photo-1715733965804-88ae4496f29a?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1800" alt="Black performance car at night"><div class="machinecopy"><div class="label">BLACK / FOUR WHEELS</div><h3>Built for speed.</h3><p>Performance without unnecessary noise.</p></div></article>
+    </div>
+    <section class="wrap sec" id="markets">
+      <h2>Markets built for active traders</h2>
+      <p class="sub">Open BTC, ETH and SOL perpetuals in one click. Additional listings go through the Black DEX launch desk.</p>
+      <div class="grid3">
+        <a class="card" href="https://black-dex.online/perp/PERP_BTC_USDC"><div class="ico">B</div><h3>BTC-USDC Perp</h3><p>Flagship crypto perpetual with shared Orderly depth and a professional order ticket.</p></a>
+        <a class="card" href="https://black-dex.online/perp/PERP_ETH_USDC"><div class="ico">E</div><h3>ETH-USDC Perp</h3><p>Default landing market on the Black DEX terminal. Chart, book and positions in one layout.</p></a>
+        <a class="card" href="https://listing.black-dex.online"><div class="ico">+</div><h3>List a market</h3><p>Projects can launch a perpetual market and reach traders already on the venue.</p></a>
       </div>
-    </div></section>
-
-    <section id="terminal"><div class="wrap"><div class="terminal">
-      <div><div class="kicker">03 / The Terminal</div><h2>Your market.<br>Your position.</h2><p>Open the Black DEX terminal when you are ready to trade. The landing page is only the gateway — execution happens on the main trading platform.</p><a class="btn primary" href="https://black-dex.online">Open Trading Terminal ↗</a></div>
-      <div class="stats"><div class="stat"><b>10×</b><span>Max leverage*</span></div><div class="stat"><b>24/7</b><span>Market access</span></div><div class="stat"><b>RWA</b><span>Market exposure</span></div><div class="stat"><b>DEX</b><span>Non-custodial focus</span></div></div>
-    </div></div></section>
-
-    <section class="final"><div class="wrap"><div class="kicker">04 / Ready?</div><h2>Stop watching.<br><span class="gold">Start trading.</span></h2><p>Black DEX is the gateway for traders who want speed, control and a more direct relationship with the market.</p><a class="btn primary" href="https://black-dex.online">Enter Black DEX ↗</a></div></section>
+    </section>
+    <section class="wrap sec" id="products">
+      <h2>The exchange stack</h2>
+      <p class="sub">Same product surface traders expect from a major exchange — wired to on-chain accounts.</p>
+      <div class="grid3">
+        <article class="card"><div class="ico">P</div><h3>Perpetuals</h3><p>Cross-margin perps, leverage when the setup needs it, and a TradingView-powered chart.</p></article>
+        <article class="card"><div class="ico">V</div><h3>Vaults</h3><p>Optional vault strategies sit next to the terminal so idle margin can work without leaving the venue.</p></article>
+        <article class="card"><div class="ico">R</div><h3>Rewards</h3><p>Referral, points and leaderboard rails are built into the Orderly builder stack.</p></article>
+      </div>
+    </section>
+    <section class="wrap sec" id="why">
+      <div class="split">
+        <div>
+          <div class="kicker">Why traders stay</div>
+          <h2>CEX feel. DEX custody.</h2>
+          <p class="sub">Centralized venues win on speed and layout. They lose on custody. Black DEX keeps the layout and routes risk, matching and settlement through Orderly.</p>
+          <div class="steps">
+            <div class="step"><span>01</span><h3>Connect wallet</h3><p>No email account. Sign with the wallet you already use.</p></div>
+            <div class="step"><span>02</span><h3>Deposit margin</h3><p>Omnichain deposit into the trading account. Funds stay under your key.</p></div>
+            <div class="step"><span>03</span><h3>Trade the book</h3><p>Limit, market and positions in a professional ticket. Not a swap popup.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>What you do not give up</h3>
+          <p style="margin-top:12px">Black DEX does not take custody of trading capital. Orderly is the independent matching and settlement layer. Occult Black coordinates listings. The terminal is the venue traders open.</p>
+          <p class="note">*Leverage and listed markets depend on venue and risk settings. Trade only what you can lose.</p>
+        </div>
+      </div>
+    </section>
+    <section class="wrap">
+      <div class="cta">
+        <div class="kicker">Ready</div>
+        <h2>Open the exchange.</h2>
+        <p>The landing page is the front door. Execution happens on black-dex.online.</p>
+        <a class="btn gold lg" href="https://black-dex.online">Launch Black DEX</a>
+      </div>
+    </section>
   </main>
-
-  <footer><div class="wrap foot"><span><b>BLACK DEX</b> — Trust less. Trade more.</span><span>*Leverage and market availability are subject to platform conditions and risk. Trade responsibly.</span></div></footer>
+  <footer>
+    <div class="wrap">
+      <div class="fgrid">
+        <div>
+          <div class="brand" style="margin-bottom:12px"><span class="mark">B</span> BLACK DEX</div>
+          <p>Non-custodial perpetual futures venue. Infrastructure by Orderly Network.</p>
+        </div>
+        <div><b style="color:#eaecef">Trade</b><br><a href="https://black-dex.online">Terminal</a><br><a href="https://black-dex.online/markets">Markets</a><br><a href="https://black-dex.online/portfolio">Portfolio</a></div>
+        <div><b style="color:#eaecef">Grow</b><br><a href="https://listing.black-dex.online">List a market</a><br><a href="https://black-dex.online/rewards">Rewards</a><br><a href="https://black-dex.online/vaults">Vaults</a></div>
+        <div><b style="color:#eaecef">Social</b><br><a href="https://x.com/BlackDexOnline">X / Twitter</a><br><a href="https://t.me/blackdexonlineadmin">Telegram</a></div>
+      </div>
+      <div class="copy"><span>© 2026 Black DEX</span><span>Trading involves risk. Not available in every jurisdiction.</span></div>
+    </div>
+  </footer>
 </body>
 </html>
