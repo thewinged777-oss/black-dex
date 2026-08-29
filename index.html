@@ -27,7 +27,21 @@
     nav{height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px}
     .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.06em}
     .brand img{width:auto;height:36px;border-radius:6px;object-fit:contain;background:#0b0e11}
-    .navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px;font-weight:500}.navlinks a:hover{color:var(--text)}
+    .desk{display:flex;align-items:center;gap:4px;padding:4px;background:#12161c;border:1px solid var(--line);border-radius:8px}
+    .desk a{
+      position:relative;display:inline-flex;align-items:center;justify-content:center;
+      min-height:32px;padding:0 14px;border-radius:6px;
+      color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+      transition:color .15s ease,background .15s ease,box-shadow .15s ease;
+    }
+    .desk a:hover{color:var(--gold2);background:rgba(212,175,55,.08)}
+    .desk a:focus-visible{outline:1px solid var(--gold);outline-offset:1px}
+    .desk a.is-on{
+      color:#0b0e11;background:linear-gradient(180deg,#f0d78c,#d4af37);
+      box-shadow:0 0 0 1px rgba(212,175,55,.35),0 6px 16px rgba(0,0,0,.28);
+    }
+    .desk a.ghost{color:#5e6673;letter-spacing:.1em}
+    .desk a.ghost:hover{color:var(--text);background:#1e2329}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:6px;font-size:14px;font-weight:600}
     .btn.gold{background:var(--gold);color:#0b0e11}.btn.ghost{border:1px solid var(--line);color:var(--text)}
     .btn.lg{padding:14px 22px;font-size:15px}
@@ -63,19 +77,19 @@
     footer{border-top:1px solid var(--line);padding:40px 0 28px;color:var(--muted);font-size:13px}
     .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:24px;margin-bottom:28px}
     footer a:hover{color:var(--gold)}.copy{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    @media(max-width:860px){.navlinks{display:none}.hero,.split,.grid3,.steps,.stats,.fgrid{grid-template-columns:1fr}h1{font-size:40px}.cta{padding:36px 20px}}
+    @media(max-width:860px){.desk{display:none}.hero,.split,.grid3,.steps,.stats,.fgrid{grid-template-columns:1fr}h1{font-size:40px}.cta{padding:36px 20px}}
   </style>
 </head>
 <body>
   <div class="ann">Non-custodial perpetual futures · Shared Orderly liquidity · List a market on Black DEX</div>
   <header><div class="wrap"><nav>
     <a class="brand" href="#top"><img src="https://black-dex.online/logo.webp" alt="Black DEX"> BLACK DEX</a>
-    <div class="navlinks">
-      <a href="https://black-dex.online">Trade</a>
-      <a href="https://black-dex.online/markets">Markets</a>
+    <div class="desk" role="navigation" aria-label="Exchange desk">
+      <a class="is-on" href="https://black-dex.online">Trade</a>
       <a href="https://black-dex.online/portfolio">Portfolio</a>
+      <a href="https://black-dex.online/markets">Markets</a>
       <a href="https://black-dex.online/leaderboard">Leaderboard</a>
-      <a href="https://main.black-dex.online">Main</a>
+      <a class="ghost" href="https://main.black-dex.online">Main</a>
     </div>
     <a class="btn gold" href="https://black-dex.online">Launch Exchange</a>
   </nav></div></header>
