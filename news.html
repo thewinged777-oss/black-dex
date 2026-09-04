@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07090f">
+  <title>News — Black DEX</title>
+  <meta name="description" content="Black DEX desk notes. Buy USDC with MoonPay. Morpho Earn vaults on the same wallet as the book.">
+  <link rel="canonical" href="https://main.black-dex.online/news.html">
+  <link rel="icon" type="image/webp" href="https://black-dex.online/logo-secondary.webp">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/site.css">
+  <script src="/host-router.js"></script>
+</head>
+<body>
+  <div class="ann">Desk notes · Product updates · Black DEX</div>
+  <header><div class="wrap"><nav>
+    <a class="brand" href="https://main.black-dex.online"><img src="https://black-dex.online/logo-secondary.webp" alt="Black DEX"> BLACK DEX</a>
+    <div class="desk">
+      <a href="https://black-dex.online">Trade</a>
+      <a href="/listing.html">Listing</a>
+      <a class="is-on" href="/news.html">News</a>
+      <a href="/affiliates.html">Affiliates</a>
+      <a href="https://main.black-dex.online">Main</a>
+    </div>
+    <a class="btn gold" href="https://black-dex.online">Launch Exchange</a>
+  </nav></div></header>
+  <main>
+    <section class="wrap hero">
+      <div class="kicker">News desk</div>
+      <h1>What shipped on the venue.</h1>
+      <p class="lead">Product notes from the Black DEX desk. Not a social feed. Two live items today: card on-ramp for Base USDC, and Earn vaults wrapped through Privy on Morpho and Tempo.</p>
+    </section>
+
+    <article class="wrap sec news-post" id="buy-usdc-moonpay">
+      <div class="kicker">4 Sep 2026 · Portfolio</div>
+      <h2>Buy USDC with MoonPay on Portfolio</h2>
+      <p class="sub">Card checkout now sits on the Portfolio overview. Connect the Black DEX wallet, tap Buy USDC, and Privy opens MoonPay first, with Stripe and Coinbase as fallbacks.</p>
+      <div class="card">
+        <p>Destination is <b style="color:#eaecef">Base USDC</b> on the connected address — the same EVM wallet you use to trade. This is not Orderly ledger USDC and not Tempo pathUSD.</p>
+        <p>Payment rails are debit/credit, Apple Pay and Google Pay where the provider allows them. Debit cards usually clear more often than credit. Settlement is the provider’s clock, not instant fill on the book.</p>
+        <p>The flow only appears after Card onramps are enabled on the Privy app and <code>https://black-dex.online</code> is on the allowed-origins list.</p>
+        <p class="note">Open <a href="https://black-dex.online/portfolio">black-dex.online/portfolio</a> · Checkout branded MoonPay / Stripe / Coinbase via Privy Funding.</p>
+      </div>
+      <div class="actions" style="margin-top:18px">
+        <a class="btn gold" href="https://black-dex.online/portfolio">Buy USDC</a>
+        <a class="btn ghost" href="https://black-dex.online">Open the terminal</a>
+      </div>
+    </article>
+
+    <article class="wrap sec news-post" id="morpho-earn-vaults">
+      <div class="kicker">4 Sep 2026 · Earn</div>
+      <h2>Morpho Earn vaults on Black DEX</h2>
+      <p class="sub">/earn now lists Privy-wrapped vaults instead of Orderly strategy cards. Deposits use the connected Black DEX wallet. Yield is variable. A performance fee is taken from yield only.</p>
+      <div class="grid2">
+        <article class="card">
+          <h3>Steakhouse Prime USDC</h3>
+          <p>Base. Asset USDC. Morpho strategy behind a Privy fee wrapper. Black DEX keeps 10% of generated yield. Principal can be withdrawn to the same wallet.</p>
+        </article>
+        <article class="card">
+          <h3>Sentora pathUSD</h3>
+          <p>Tempo (chain 4217). Asset pathUSD. Same 10% yield cut. You need pathUSD on Tempo in that wallet. Tempo fees are paid in the stable, not ETH.</p>
+        </article>
+      </div>
+      <p class="note" style="margin-top:14px">APY on the cards is not a guaranteed rate. Public Morpho vaults without the wrapper do not pay Black DEX a fee.</p>
+      <div class="actions" style="margin-top:18px">
+        <a class="btn gold" href="https://black-dex.online/earn">Open Earn</a>
+      </div>
+    </article>
+  </main>
+  <footer><div class="wrap">
+    <div class="fgrid">
+      <div class="brand"><img src="https://black-dex.online/logo-secondary.webp" alt=""> BLACK DEX</div>
+      <div><b style="color:#eaecef">Venue</b><br><a href="https://black-dex.online">Trade</a><br><a href="https://black-dex.online/portfolio">Portfolio</a><br><a href="https://black-dex.online/earn">Earn</a></div>
+      <div><b style="color:#eaecef">Pages</b><br><a href="/news.html">News</a><br><a href="/listing.html">Listing</a><br><a href="/affiliates.html">Affiliates</a><br><a href="/token.html">Token</a></div>
+      <div><b style="color:#eaecef">Social</b><br><a href="https://x.com/BlackDexOnline">X</a><br><a href="https://t.me/blackdexonlineadmin">Telegram</a></div>
+    </div>
+    <div class="copy"><span>© 2026 Black DEX</span><span>Trading involves risk. Yield is not guaranteed.</span></div>
+  </div></footer>
+</body>
+</html>
