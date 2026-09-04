@@ -39,4 +39,11 @@ footer{border-top:1px solid var(--line);padding:40px 0 28px;color:var(--muted);f
 footer a:hover{color:var(--gold)}.copy{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 details{border:1px solid var(--line);border-radius:8px;padding:14px 16px;background:var(--panel);margin-bottom:10px}
 summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:10px 0 0;font-size:14px;line-height:1.6}
-@media(max-width:860px){.desk{display:none}.grid3,.grid2,.fgrid{grid-template-columns:1fr}h1{font-size:36px}.cta{padding:32px 18px}}
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.news-card{display:flex;flex-direction:column;gap:8px;min-height:220px}
+.news-card time{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.news-card h3{margin:0}
+.news-card p{margin:0;flex:1}
+.news-card .more{color:var(--gold2);font-size:13px;font-weight:600}
+.news-post code{color:var(--gold2);font-size:13px}
+@media(max-width:860px){.desk{display:none}.grid3,.grid2,.fgrid,.news-grid{grid-template-columns:1fr}h1{font-size:36px}.cta{padding:32px 18px}}
