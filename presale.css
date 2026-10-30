@@ -807,3 +807,74 @@
     padding: 40px 16px;
   }
 }
+
+
+/* Presale payment readiness — intentionally non-interactive until legal launch approval */
+.bp-payment-readiness {
+  margin-top: 16px;
+  padding: 24px;
+  background: linear-gradient(145deg,#111a29,#0c1018);
+  border: 1px solid rgba(212,175,55,.24);
+}
+.bp-payment-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+}
+.bp-payment-top h3 {
+  margin:9px 0 8px;
+  font-size:clamp(20px,2.5vw,27px);
+}
+.bp-payment-top p {
+  max-width:680px;
+  margin:0;
+  color:#aeb5c1;
+  font-size:12px;
+  line-height:1.7;
+}
+.bp-payment-facts {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  margin-top:22px;
+  background:var(--bp-line);
+  border:1px solid var(--bp-line);
+}
+.bp-payment-facts > div {
+  min-width:0;
+  padding:15px;
+  display:grid;
+  gap:8px;
+  background:#0a0e15;
+}
+.bp-payment-facts span {
+  color:var(--bp-muted);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.12em;
+}
+.bp-payment-facts b {
+  font-size:12px;
+  overflow-wrap:anywhere;
+}
+.bp-payment-facts code {
+  color:var(--bp-gold2);
+  font-size:11px;
+  overflow-wrap:anywhere;
+}
+.bp-payment-warning {
+  margin-top:16px;
+  padding:15px 17px;
+  border:1px solid rgba(230,181,106,.35);
+  background:rgba(230,181,106,.07);
+  color:#d2c4aa;
+  font-size:12px;
+  line-height:1.65;
+}
+.bp-payment-warning b { color:#f0d78c; }
+@media(max-width:620px) {
+  .bp-payment-readiness { padding:18px; }
+  .bp-payment-top { flex-direction:column; }
+  .bp-payment-facts { grid-template-columns:1fr; }
+}
