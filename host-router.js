@@ -4,7 +4,7 @@
   var map = {
     "listing.black-dex.online": "/listing.html",
     "affiliates.black-dex.online": "/affiliates.html",
-    "token.black-dex.online": "/token.html",
+    "token.black-dex.online": "/presale/",
     "news.black-dex.online": "/news.html"
   };
   var dest = map[host];
