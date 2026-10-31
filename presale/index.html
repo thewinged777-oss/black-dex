@@ -107,7 +107,7 @@
             <h3 id="bp-payment-title">Contribute with native USDC on Solana.</h3>
             <p>The $BLACK presale is open for manual contributions. Send only native Circle USDC on Solana to the exact wallet below. After sending, submit your transaction signature and sending wallet through the official Telegram admin channel for manual verification. Never share your seed phrase or private key.</p>
           </div>
-          <span class="bp-not-open"><i></i> NOT OPEN</span>
+          <span class="bp-not-open"><i></i> PRESALE LIVE</span>
         </div>
         <div class="bp-payment-facts">
           <div><span>NETWORK</span><b>Solana Mainnet</b></div>
@@ -305,7 +305,8 @@
         var amount = Number(input.value);
         var valid = Number.isFinite(amount) && amount >= 100 && amount <= 10000;
         var safe = Number.isFinite(amount) ? Math.min(Math.max(amount, 0), 10000) : 0;
-        var price = safe <= 500 ? 0.008 : (safe <= 5000 ? 0.010 : 0.012);\n        var allocation = safe / price;
+        var price = safe <= 500 ? 0.008 : (safe <= 5000 ? 0.010 : 0.012);
+        var allocation = safe / price;
         tokens.textContent = fmt(allocation);
         tge.textContent = fmt(allocation * 0.10);
         vested.textContent = fmt(allocation * 0.90);
