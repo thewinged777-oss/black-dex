@@ -90,6 +90,8 @@
           <div class="bp-card-head"><b>ALLOCATION ESTIMATOR</b><span>ILLUSTRATIVE ONLY</span></div>
           <h3>Estimate a token allocation</h3>
           <p>Estimate using the current tier price. The actual allocation is confirmed only after manual verification of the payment and available tier inventory.</p>
+          <label for="bp-tier">Select pricing tier</label>
+          <select id="bp-tier"><option value="0.008">Tier 1 — $0.008</option><option value="0.010" selected>Tier 2 — $0.010</option><option value="0.012">Tier 3 — $0.012</option></select>
           <label for="bp-amount">Contribution amount (USD)</label>
           <div class="bp-input"><span>$</span><input id="bp-amount" type="number" min="100" max="10000" step="50" value="1000" inputmode="decimal"></div>
           <div class="bp-estimate"><span>Estimated tokens</span><b id="bp-tokens">100,000</b></div>
@@ -296,6 +298,7 @@
   <script>
     (function () {
       var input = document.getElementById("bp-amount");
+      var tier = document.getElementById("bp-tier");
       var tokens = document.getElementById("bp-tokens");
       var tge = document.getElementById("bp-tge");
       var vested = document.getElementById("bp-vested");
@@ -305,7 +308,7 @@
         var amount = Number(input.value);
         var valid = Number.isFinite(amount) && amount >= 100 && amount <= 10000;
         var safe = Number.isFinite(amount) ? Math.min(Math.max(amount, 0), 10000) : 0;
-        var price = safe <= 500 ? 0.008 : (safe <= 5000 ? 0.010 : 0.012);
+        var price = Number(tier.value);
         var allocation = safe / price;
         tokens.textContent = fmt(allocation);
         tge.textContent = fmt(allocation * 0.10);
@@ -316,6 +319,7 @@
         validation.classList.toggle("is-error", !valid);
       }
       input.addEventListener("input", update);
+      tier.addEventListener("change", update);
       update();
     })();
   </script>
