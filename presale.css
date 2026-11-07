@@ -1139,3 +1139,150 @@
   .bp-exchange-proof { grid-template-columns:1fr; padding:19px; gap:14px; }
   .bp-exchange-proof > .bp-note { grid-column:auto; }
 }
+
+
+/* Token economics presentation: supply, pricing and proceeds at a glance */
+.bp-economics-overview {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1px;
+  margin:0 0 24px;
+  overflow:hidden;
+  border:1px solid var(--bp-line);
+  border-radius:9px;
+  background:var(--bp-line);
+}
+.bp-econ-card {
+  min-width:0;
+  min-height:116px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:8px;
+  background:linear-gradient(160deg,#121b2a,#0b1018);
+}
+.bp-econ-card > span,.bp-tier-card > span {
+  color:var(--bp-muted);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+.bp-econ-card > b {
+  color:#f0d78c;
+  font-family:"IBM Plex Mono",monospace;
+  font-size:clamp(19px,2.2vw,27px);
+  letter-spacing:-.04em;
+  white-space:nowrap;
+}
+.bp-econ-card > small {
+  color:#8993a1;
+  font-size:10px;
+}
+.bp-econ-primary { background:linear-gradient(145deg,rgba(212,175,55,.14),#0c1018 80%); }
+.bp-pricing-model {
+  margin:0 0 28px;
+  padding:clamp(18px,3vw,28px);
+  border:1px solid rgba(212,175,55,.24);
+  border-radius:9px;
+  background:linear-gradient(145deg,#111a29,#090d14);
+}
+.bp-pricing-heading {
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:20px;
+  margin-bottom:18px;
+}
+.bp-pricing-heading h3 {
+  margin:7px 0 0;
+  font-size:clamp(18px,2.5vw,24px);
+}
+.bp-pricing-heading p {
+  max-width:350px;
+  margin:0;
+  color:var(--bp-muted);
+  font-size:11px;
+  line-height:1.6;
+}
+.bp-tier-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+.bp-tier-card {
+  min-width:0;
+  padding:18px;
+  border:1px solid var(--bp-line);
+  border-radius:7px;
+  background:#0a0e15;
+}
+.bp-tier-card > b {
+  display:block;
+  margin-top:12px;
+  color:#f0d78c;
+  font-family:"IBM Plex Mono",monospace;
+  font-size:clamp(26px,3vw,36px);
+}
+.bp-tier-card > small {
+  color:#8d97a5;
+  font-size:10px;
+}
+.bp-tier-card > div {
+  display:grid;
+  gap:3px;
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid var(--bp-line);
+}
+.bp-tier-card > div strong {
+  font-family:"IBM Plex Mono",monospace;
+  font-size:20px;
+}
+.bp-tier-card > div span,.bp-tier-card footer,.bp-tier-card em {
+  color:#9aa4b2;
+  font-size:10px;
+  font-style:normal;
+}
+.bp-tier-card footer {
+  margin-top:13px;
+  color:#e2e6ec;
+  font-weight:700;
+}
+.bp-tier-card em { display:block; margin-top:7px; }
+.bp-tier-featured {
+  border-color:rgba(212,175,55,.6);
+  background:linear-gradient(145deg,rgba(212,175,55,.12),#0a0e15 70%);
+}
+.bp-econ-equation {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:18px;
+  padding:14px;
+  border:1px solid rgba(212,175,55,.18);
+  background:rgba(212,175,55,.045);
+  color:#e7eaf0;
+  font-family:"IBM Plex Mono",monospace;
+  font-size:11px;
+  text-align:center;
+}
+.bp-econ-equation b { color:#d4af37; }
+@media(max-width:760px) {
+  .bp-economics-overview { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .bp-pricing-heading { align-items:flex-start; flex-direction:column; }
+}
+@media(max-width:560px) {
+  .bp-econ-card { min-height:100px; padding:14px; }
+  .bp-econ-card > b { font-size:18px; white-space:normal; overflow-wrap:anywhere; }
+  .bp-tier-grid { grid-template-columns:1fr; }
+  .bp-tier-card { display:grid; grid-template-columns:1fr auto; gap:4px 12px; align-items:center; }
+  .bp-tier-card > b { grid-column:1; grid-row:2; margin-top:4px; }
+  .bp-tier-card > small { grid-column:1; }
+  .bp-tier-card > div { grid-column:2; grid-row:1 / span 3; margin:0; padding:0 0 0 12px; border-top:0; border-left:1px solid var(--bp-line); }
+  .bp-tier-card footer,.bp-tier-card em { grid-column:1/-1; }
+  .bp-econ-equation { flex-direction:column; gap:5px; }
+  .bp-econ-equation b { transform:rotate(90deg); }
+}
